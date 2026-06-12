@@ -36,3 +36,14 @@ export interface PredictionPayload {
 // Stored in localStorage as:
 // { "match_001": { teamA_goals: 2, teamB_goals: 1, createdAt: "..." }, ... }
 export type PredictionStore = Record<string, Prediction>;
+
+export interface User {
+  username: string;
+  createdAt: string;
+}
+
+export interface UserSession {
+  username: string;
+}
+
+export type UserRegistry = Record<string, User>;
