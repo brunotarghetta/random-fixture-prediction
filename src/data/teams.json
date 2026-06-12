@@ -1,0 +1,194 @@
+[
+  {
+    "id": "us",
+    "name": "United States",
+    "flag": "🇺🇸",
+    "initials": "USA"
+  },
+  {
+    "id": "mx",
+    "name": "Mexico",
+    "flag": "🇲🇽",
+    "initials": "MEX"
+  },
+  {
+    "id": "ca",
+    "name": "Canada",
+    "flag": "🇨🇦",
+    "initials": "CAN"
+  },
+  {
+    "id": "br",
+    "name": "Brazil",
+    "flag": "🇧🇷",
+    "initials": "BRA"
+  },
+  {
+    "id": "ar",
+    "name": "Argentina",
+    "flag": "🇦🇷",
+    "initials": "ARG"
+  },
+  {
+    "id": "uy",
+    "name": "Uruguay",
+    "flag": "🇺🇾",
+    "initials": "URU"
+  },
+  {
+    "id": "py",
+    "name": "Paraguay",
+    "flag": "🇵🇾",
+    "initials": "PAR"
+  },
+  {
+    "id": "ve",
+    "name": "Venezuela",
+    "flag": "🇻🇪",
+    "initials": "VEN"
+  },
+  {
+    "id": "co",
+    "name": "Colombia",
+    "flag": "🇨🇴",
+    "initials": "COL"
+  },
+  {
+    "id": "ec",
+    "name": "Ecuador",
+    "flag": "🇪🇨",
+    "initials": "ECU"
+  },
+  {
+    "id": "pe",
+    "name": "Peru",
+    "flag": "🇵🇪",
+    "initials": "PER"
+  },
+  {
+    "id": "cl",
+    "name": "Chile",
+    "flag": "🇨🇱",
+    "initials": "CHI"
+  },
+  {
+    "id": "fr",
+    "name": "France",
+    "flag": "🇫🇷",
+    "initials": "FRA"
+  },
+  {
+    "id": "gb",
+    "name": "England",
+    "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+    "initials": "ENG"
+  },
+  {
+    "id": "de",
+    "name": "Germany",
+    "flag": "🇩🇪",
+    "initials": "GER"
+  },
+  {
+    "id": "it",
+    "name": "Italy",
+    "flag": "🇮🇹",
+    "initials": "ITA"
+  },
+  {
+    "id": "es",
+    "name": "Spain",
+    "flag": "🇪🇸",
+    "initials": "ESP"
+  },
+  {
+    "id": "pt",
+    "name": "Portugal",
+    "flag": "🇵🇹",
+    "initials": "POR"
+  },
+  {
+    "id": "nl",
+    "name": "Netherlands",
+    "flag": "🇳🇱",
+    "initials": "NED"
+  },
+  {
+    "id": "be",
+    "name": "Belgium",
+    "flag": "🇧🇪",
+    "initials": "BEL"
+  },
+  {
+    "id": "ru",
+    "name": "Russian Federation",
+    "flag": "🇷🇺",
+    "initials": "RUS"
+  },
+  {
+    "id": "cr",
+    "name": "Costa Rica",
+    "flag": "🇨🇷",
+    "initials": "CRC"
+  },
+  {
+    "id": "jp",
+    "name": "Japan",
+    "flag": "🇯🇵",
+    "initials": "JPN"
+  },
+  {
+    "id": "kr",
+    "name": "South Korea",
+    "flag": "🇰🇷",
+    "initials": "KOR"
+  },
+  {
+    "id": "au",
+    "name": "Australia",
+    "flag": "🇦🇺",
+    "initials": "AUS"
+  },
+  {
+    "id": "ma",
+    "name": "Morocco",
+    "flag": "🇲🇦",
+    "initials": "MAR"
+  },
+  {
+    "id": "ng",
+    "name": "Nigeria",
+    "flag": "🇳🇬",
+    "initials": "NGA"
+  },
+  {
+    "id": "gh",
+    "name": "Ghana",
+    "flag": "🇬🇭",
+    "initials": "GHA"
+  },
+  {
+    "id": "sn",
+    "name": "Senegal",
+    "flag": "🇸🇳",
+    "initials": "SEN"
+  },
+  {
+    "id": "tn",
+    "name": "Tunisia",
+    "flag": "🇹🇳",
+    "initials": "TUN"
+  },
+  {
+    "id": "ir",
+    "name": "Iran",
+    "flag": "🇮🇷",
+    "initials": "IRN"
+  },
+  {
+    "id": "nz",
+    "name": "New Zealand",
+    "flag": "🇳🇿",
+    "initials": "NZL"
+  }
+]
