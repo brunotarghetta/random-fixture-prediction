@@ -1,0 +1,578 @@
+[
+  {
+    "id": "match_001",
+    "teamA_id": "us",
+    "teamB_id": "mx",
+    "scheduledDateTime": "2026-06-12T16:00:00Z",
+    "finalScore": null,
+    "group": "Group A",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_002",
+    "teamA_id": "us",
+    "teamB_id": "ca",
+    "scheduledDateTime": "2026-06-21T20:00:00Z",
+    "finalScore": null,
+    "group": "Group A",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_003",
+    "teamA_id": "us",
+    "teamB_id": "br",
+    "scheduledDateTime": "2026-06-22T16:00:00Z",
+    "finalScore": null,
+    "group": "Group A",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_004",
+    "teamA_id": "mx",
+    "teamB_id": "ca",
+    "scheduledDateTime": "2026-06-22T20:00:00Z",
+    "finalScore": null,
+    "group": "Group A",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_005",
+    "teamA_id": "mx",
+    "teamB_id": "br",
+    "scheduledDateTime": "2026-06-24T16:00:00Z",
+    "finalScore": null,
+    "group": "Group A",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_006",
+    "teamA_id": "ca",
+    "teamB_id": "br",
+    "scheduledDateTime": "2026-06-24T20:00:00Z",
+    "finalScore": null,
+    "group": "Group A",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_007",
+    "teamA_id": "ar",
+    "teamB_id": "uy",
+    "scheduledDateTime": "2026-06-21T16:00:00Z",
+    "finalScore": null,
+    "group": "Group B",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_008",
+    "teamA_id": "ar",
+    "teamB_id": "py",
+    "scheduledDateTime": "2026-06-21T20:00:00Z",
+    "finalScore": null,
+    "group": "Group B",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_009",
+    "teamA_id": "ar",
+    "teamB_id": "ve",
+    "scheduledDateTime": "2026-06-22T16:00:00Z",
+    "finalScore": null,
+    "group": "Group B",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_010",
+    "teamA_id": "uy",
+    "teamB_id": "py",
+    "scheduledDateTime": "2026-06-22T20:00:00Z",
+    "finalScore": null,
+    "group": "Group B",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_011",
+    "teamA_id": "uy",
+    "teamB_id": "ve",
+    "scheduledDateTime": "2026-06-24T16:00:00Z",
+    "finalScore": null,
+    "group": "Group B",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_012",
+    "teamA_id": "py",
+    "teamB_id": "ve",
+    "scheduledDateTime": "2026-06-24T20:00:00Z",
+    "finalScore": null,
+    "group": "Group B",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_013",
+    "teamA_id": "co",
+    "teamB_id": "ec",
+    "scheduledDateTime": "2026-06-21T16:00:00Z",
+    "finalScore": null,
+    "group": "Group C",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_014",
+    "teamA_id": "co",
+    "teamB_id": "pe",
+    "scheduledDateTime": "2026-06-21T20:00:00Z",
+    "finalScore": null,
+    "group": "Group C",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_015",
+    "teamA_id": "co",
+    "teamB_id": "cl",
+    "scheduledDateTime": "2026-06-22T16:00:00Z",
+    "finalScore": null,
+    "group": "Group C",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_016",
+    "teamA_id": "ec",
+    "teamB_id": "pe",
+    "scheduledDateTime": "2026-06-22T20:00:00Z",
+    "finalScore": null,
+    "group": "Group C",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_017",
+    "teamA_id": "ec",
+    "teamB_id": "cl",
+    "scheduledDateTime": "2026-06-24T16:00:00Z",
+    "finalScore": null,
+    "group": "Group C",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_018",
+    "teamA_id": "pe",
+    "teamB_id": "cl",
+    "scheduledDateTime": "2026-06-24T20:00:00Z",
+    "finalScore": null,
+    "group": "Group C",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_019",
+    "teamA_id": "fr",
+    "teamB_id": "gb",
+    "scheduledDateTime": "2026-06-21T16:00:00Z",
+    "finalScore": null,
+    "group": "Group D",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_020",
+    "teamA_id": "fr",
+    "teamB_id": "de",
+    "scheduledDateTime": "2026-06-21T20:00:00Z",
+    "finalScore": null,
+    "group": "Group D",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_021",
+    "teamA_id": "fr",
+    "teamB_id": "it",
+    "scheduledDateTime": "2026-06-22T16:00:00Z",
+    "finalScore": null,
+    "group": "Group D",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_022",
+    "teamA_id": "gb",
+    "teamB_id": "de",
+    "scheduledDateTime": "2026-06-22T20:00:00Z",
+    "finalScore": null,
+    "group": "Group D",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_023",
+    "teamA_id": "gb",
+    "teamB_id": "it",
+    "scheduledDateTime": "2026-06-24T16:00:00Z",
+    "finalScore": null,
+    "group": "Group D",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_024",
+    "teamA_id": "de",
+    "teamB_id": "it",
+    "scheduledDateTime": "2026-06-24T20:00:00Z",
+    "finalScore": null,
+    "group": "Group D",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_025",
+    "teamA_id": "es",
+    "teamB_id": "pt",
+    "scheduledDateTime": "2026-06-21T16:00:00Z",
+    "finalScore": null,
+    "group": "Group E",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_026",
+    "teamA_id": "es",
+    "teamB_id": "nl",
+    "scheduledDateTime": "2026-06-21T20:00:00Z",
+    "finalScore": null,
+    "group": "Group E",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_027",
+    "teamA_id": "es",
+    "teamB_id": "be",
+    "scheduledDateTime": "2026-06-22T16:00:00Z",
+    "finalScore": null,
+    "group": "Group E",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_028",
+    "teamA_id": "pt",
+    "teamB_id": "nl",
+    "scheduledDateTime": "2026-06-22T20:00:00Z",
+    "finalScore": null,
+    "group": "Group E",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_029",
+    "teamA_id": "pt",
+    "teamB_id": "be",
+    "scheduledDateTime": "2026-06-24T16:00:00Z",
+    "finalScore": null,
+    "group": "Group E",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_030",
+    "teamA_id": "nl",
+    "teamB_id": "be",
+    "scheduledDateTime": "2026-06-24T20:00:00Z",
+    "finalScore": null,
+    "group": "Group E",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_031",
+    "teamA_id": "ru",
+    "teamB_id": "cr",
+    "scheduledDateTime": "2026-06-21T16:00:00Z",
+    "finalScore": null,
+    "group": "Group F",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_032",
+    "teamA_id": "ru",
+    "teamB_id": "jp",
+    "scheduledDateTime": "2026-06-21T20:00:00Z",
+    "finalScore": null,
+    "group": "Group F",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_033",
+    "teamA_id": "ru",
+    "teamB_id": "kr",
+    "scheduledDateTime": "2026-06-22T16:00:00Z",
+    "finalScore": null,
+    "group": "Group F",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_034",
+    "teamA_id": "cr",
+    "teamB_id": "jp",
+    "scheduledDateTime": "2026-06-22T20:00:00Z",
+    "finalScore": null,
+    "group": "Group F",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_035",
+    "teamA_id": "cr",
+    "teamB_id": "kr",
+    "scheduledDateTime": "2026-06-24T16:00:00Z",
+    "finalScore": null,
+    "group": "Group F",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_036",
+    "teamA_id": "jp",
+    "teamB_id": "kr",
+    "scheduledDateTime": "2026-06-24T20:00:00Z",
+    "finalScore": null,
+    "group": "Group F",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_037",
+    "teamA_id": "au",
+    "teamB_id": "ma",
+    "scheduledDateTime": "2026-06-21T16:00:00Z",
+    "finalScore": null,
+    "group": "Group G",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_038",
+    "teamA_id": "au",
+    "teamB_id": "ng",
+    "scheduledDateTime": "2026-06-21T20:00:00Z",
+    "finalScore": null,
+    "group": "Group G",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_039",
+    "teamA_id": "au",
+    "teamB_id": "gh",
+    "scheduledDateTime": "2026-06-22T16:00:00Z",
+    "finalScore": null,
+    "group": "Group G",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_040",
+    "teamA_id": "ma",
+    "teamB_id": "ng",
+    "scheduledDateTime": "2026-06-22T20:00:00Z",
+    "finalScore": null,
+    "group": "Group G",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_041",
+    "teamA_id": "ma",
+    "teamB_id": "gh",
+    "scheduledDateTime": "2026-06-24T16:00:00Z",
+    "finalScore": null,
+    "group": "Group G",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_042",
+    "teamA_id": "ng",
+    "teamB_id": "gh",
+    "scheduledDateTime": "2026-06-24T20:00:00Z",
+    "finalScore": null,
+    "group": "Group G",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_043",
+    "teamA_id": "sn",
+    "teamB_id": "tn",
+    "scheduledDateTime": "2026-06-21T16:00:00Z",
+    "finalScore": null,
+    "group": "Group H",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_044",
+    "teamA_id": "sn",
+    "teamB_id": "ir",
+    "scheduledDateTime": "2026-06-21T20:00:00Z",
+    "finalScore": null,
+    "group": "Group H",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_045",
+    "teamA_id": "sn",
+    "teamB_id": "nz",
+    "scheduledDateTime": "2026-06-22T16:00:00Z",
+    "finalScore": null,
+    "group": "Group H",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_046",
+    "teamA_id": "tn",
+    "teamB_id": "ir",
+    "scheduledDateTime": "2026-06-22T20:00:00Z",
+    "finalScore": null,
+    "group": "Group H",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_047",
+    "teamA_id": "tn",
+    "teamB_id": "nz",
+    "scheduledDateTime": "2026-06-24T16:00:00Z",
+    "finalScore": null,
+    "group": "Group H",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_048",
+    "teamA_id": "ir",
+    "teamB_id": "nz",
+    "scheduledDateTime": "2026-06-24T20:00:00Z",
+    "finalScore": null,
+    "group": "Group H",
+    "round": "Group Stage"
+  },
+  {
+    "id": "match_049",
+    "teamA_id": "us",
+    "teamB_id": "ar",
+    "scheduledDateTime": "2026-07-03T16:00:00Z",
+    "finalScore": null,
+    "group": "Round of 16",
+    "round": "Knockout"
+  },
+  {
+    "id": "match_050",
+    "teamA_id": "mx",
+    "teamB_id": "br",
+    "scheduledDateTime": "2026-07-03T20:00:00Z",
+    "finalScore": null,
+    "group": "Round of 16",
+    "round": "Knockout"
+  },
+  {
+    "id": "match_051",
+    "teamA_id": "co",
+    "teamB_id": "es",
+    "scheduledDateTime": "2026-07-04T16:00:00Z",
+    "finalScore": null,
+    "group": "Round of 16",
+    "round": "Knockout"
+  },
+  {
+    "id": "match_052",
+    "teamA_id": "ec",
+    "teamB_id": "pt",
+    "scheduledDateTime": "2026-07-04T20:00:00Z",
+    "finalScore": null,
+    "group": "Round of 16",
+    "round": "Knockout"
+  },
+  {
+    "id": "match_053",
+    "teamA_id": "cl",
+    "teamB_id": "nl",
+    "scheduledDateTime": "2026-07-05T16:00:00Z",
+    "finalScore": null,
+    "group": "Round of 16",
+    "round": "Knockout"
+  },
+  {
+    "id": "match_054",
+    "teamA_id": "pe",
+    "teamB_id": "be",
+    "scheduledDateTime": "2026-07-05T20:00:00Z",
+    "finalScore": null,
+    "group": "Round of 16",
+    "round": "Knockout"
+  },
+  {
+    "id": "match_055",
+    "teamA_id": "au",
+    "teamB_id": "fr",
+    "scheduledDateTime": "2026-07-06T16:00:00Z",
+    "finalScore": null,
+    "group": "Round of 16",
+    "round": "Knockout"
+  },
+  {
+    "id": "match_056",
+    "teamA_id": "nz",
+    "teamB_id": "de",
+    "scheduledDateTime": "2026-07-06T20:00:00Z",
+    "finalScore": null,
+    "group": "Round of 16",
+    "round": "Knockout"
+  },
+  {
+    "id": "match_057",
+    "teamA_id": "us",
+    "teamB_id": "co",
+    "scheduledDateTime": "2026-07-07T16:00:00Z",
+    "finalScore": null,
+    "group": "Quarterfinal",
+    "round": "Knockout"
+  },
+  {
+    "id": "match_058",
+    "teamA_id": "mx",
+    "teamB_id": "es",
+    "scheduledDateTime": "2026-07-07T20:00:00Z",
+    "finalScore": null,
+    "group": "Quarterfinal",
+    "round": "Knockout"
+  },
+  {
+    "id": "match_059",
+    "teamA_id": "cl",
+    "teamB_id": "nl",
+    "scheduledDateTime": "2026-07-08T16:00:00Z",
+    "finalScore": null,
+    "group": "Quarterfinal",
+    "round": "Knockout"
+  },
+  {
+    "id": "match_060",
+    "teamA_id": "au",
+    "teamB_id": "de",
+    "scheduledDateTime": "2026-07-08T20:00:00Z",
+    "finalScore": null,
+    "group": "Quarterfinal",
+    "round": "Knockout"
+  },
+  {
+    "id": "match_061",
+    "teamA_id": "us",
+    "teamB_id": "mx",
+    "scheduledDateTime": "2026-07-09T20:00:00Z",
+    "finalScore": null,
+    "group": "Semifinal",
+    "round": "Knockout"
+  },
+  {
+    "id": "match_062",
+    "teamA_id": "cl",
+    "teamB_id": "de",
+    "scheduledDateTime": "2026-07-10T20:00:00Z",
+    "finalScore": null,
+    "group": "Semifinal",
+    "round": "Knockout"
+  },
+  {
+    "id": "match_063",
+    "teamA_id": "mx",
+    "teamB_id": "de",
+    "scheduledDateTime": "2026-07-13T18:00:00Z",
+    "finalScore": null,
+    "group": "Third Place",
+    "round": "Knockout"
+  },
+  {
+    "id": "match_064",
+    "teamA_id": "us",
+    "teamB_id": "cl",
+    "scheduledDateTime": "2026-07-19T18:00:00Z",
+    "finalScore": null,
+    "group": "Final",
+    "round": "Knockout"
+  }
+]
