@@ -1,0 +1,68 @@
+# Tasks: Initial Page Setup
+
+**Input**: Design documents from `/specs/002-initial-page-setup/`
+
+## Phase 1: Setup (Shared Infrastructure)
+
+**Purpose**: Project initialization and basic structure
+
+- [ ] T001 Create Tailwind configuration in `tailwind.config.ts` with pastel colors `upcoming`, `completed`, and `prediction`
+- [ ] T002 Add Tailwind, PostCSS, and autoprefixer dependencies to `package.json`
+- [ ] T003 Create `postcss.config.js` with Tailwind CSS plugin configuration
+- [ ] T004 Add Tailwind directives to `src/index.css` and define base typography styles
+- [ ] T005 Create `src/data/teams.json` with 32 World Cup teams, flags, and initials
+- [ ] T006 Create `src/data/matches.json` with 64 World Cup matches, ISO timestamps, group/round metadata, and optional final scores
+
+---
+
+## Phase 2: Foundational (Blocking Prerequisites)
+
+**Purpose**: Core infrastructure that MUST be complete before user stories can be implemented
+
+- [ ] T007 Create `src/types/index.ts` with `Team`, `Match`, `Prediction`, and `PredictionStore` types
+- [ ] T008 Create `src/utils/storage.ts` with localStorage helpers for reading/writing `predictions_v1`
+- [ ] T009 Create `src/utils/predictions.ts` with `isMatchLocked()`, `formatScore()`, and prediction helper functions
+- [ ] T010 Create `src/utils/date.ts` with `getTodayMatches()`, `computeMatchStatus()`, and timezone-aware date helpers
+- [ ] T011 Create `src/hooks/usePredictions.ts` to load, save, and persist predictions in localStorage
+- [ ] T012 Create `src/hooks/useMatches.ts` to load mock match data from `src/data/matches.json` and refresh results manually
+
+---
+
+## Phase 3: User Story 1 - View Daily Matches with Results (Priority: P1)
+
+**Goal**: Display today's World Cup matches with team flags, results, and existing predictions
+
+**Independent Test**: Open the dashboard and verify daily matches display with soft blue and green backgrounds, and predictions appear below the match cards.
+
+- [ ] T013 [US1] Create `src/components/MatchCard.tsx` to render a single match with team flag+initials, result area, and prediction display
+- [ ] T014 [US1] Create `src/components/MainPage.tsx` to render today's matches, a "Refresh" button, and an empty state for no matches
+- [ ] T015 [US1] Update `src/App.tsx` to render `MainPage` instead of the default Vite/React boilerplate
+- [ ] T016 [US1] Implement daily match filtering in `src/components/MainPage.tsx` using `getTodayMatches()` from `src/utils/date.ts`
+- [ ] T017 [US1] Wire `useMatches()` and `usePredictions()` into `src/components/MainPage.tsx` so match cards display result status and saved prediction values
+
+---
+
+## Phase 4: User Story 2 - Load and Edit Predictions via Modal (Priority: P1)
+
+**Goal**: Provide an all-matches modal editor that allows prediction input for upcoming matches and locks started matches
+
+**Independent Test**: Click "Load Predictions", verify all 64 matches are listed, enter predictions for upcoming matches, save, and confirm values appear on the main page.
+
+- [ ] T018 [US2] Create `src/components/PredictionInput.tsx` with numeric goal inputs and disabled state when a match is locked
+- [ ] T019 [US2] Create `src/components/PredictionModal.tsx` to display all tournament matches, prediction inputs, and Save/Cancel controls
+- [ ] T020 [US2] Implement modal open/close state and button handlers in `src/components/MainPage.tsx`
+- [ ] T021 [US2] Add prediction save logic to `src/hooks/usePredictions.ts` and connect it to `src/components/PredictionModal.tsx`
+- [ ] T022 [US2] Ensure `src/components/PredictionModal.tsx` disables inputs for matches that have started using `isMatchLocked()` from `src/utils/predictions.ts`
+- [ ] T023 [US2] Implement manual refresh handling in `src/components/MainPage.tsx` using the refresh feature in `useMatches()`
+
+---
+
+## Phase 5: Polish & Cross-Cutting Concerns
+
+**Purpose**: Final refinements, responsive UI, and validation
+
+- [ ] T024 [P] Refine responsive layout and accessibility for `src/components/MainPage.tsx`, `src/components/MatchCard.tsx`, and `src/components/PredictionModal.tsx`
+- [ ] T025 [P] Clean up `src/App.tsx` imports and remove unused boilerplate styles in `src/App.css`
+- [ ] T026 [P] Verify Tailwind pastel theme is applied correctly to `src/index.css` and component styling
+- [ ] T027 Run validation scenarios from `specs/002-initial-page-setup/quickstart.md` and fix any implementation gaps
+- [ ] T028 [P] Document feature behavior and mock data usage in `specs/002-initial-page-setup/quickstart.md`
