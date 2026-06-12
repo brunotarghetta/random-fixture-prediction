@@ -21,7 +21,7 @@
 
 **Purpose**: Confirm environment and understand the existing codebase before touching any files.
 
-- [ ] T001 Review existing src/types/index.ts, src/utils/storage.ts, src/hooks/usePredictions.ts, src/App.tsx, and src/components/MainPage.tsx to confirm baseline before any changes
+- [X] T001 Review existing src/types/index.ts, src/utils/storage.ts, src/hooks/usePredictions.ts, src/App.tsx, and src/components/MainPage.tsx to confirm baseline before any changes
 
 ---
 
@@ -31,8 +31,8 @@
 
 **⚠️ CRITICAL**: No user story implementation can start until this phase is complete.
 
-- [ ] T002 Add `User`, `UserSession`, and `UserRegistry` types to `src/types/index.ts`
-- [ ] T003 Add auth storage helpers (`getSession`, `saveSession`, `clearSession`, `getUsers`, `saveUser`) and `userPredictionsKey` per-user key helper to `src/utils/storage.ts` (depends on T002 for types)
+- [X] T002 Add `User`, `UserSession`, and `UserRegistry` types to `src/types/index.ts`
+- [X] T003 Add auth storage helpers (`getSession`, `saveSession`, `clearSession`, `getUsers`, `saveUser`) and `userPredictionsKey` per-user key helper to `src/utils/storage.ts` (depends on T002 for types)
 
 **Checkpoint**: Types and storage utilities are ready. All user story work can now begin.
 
@@ -44,10 +44,10 @@
 
 **Independent Test**: Open the app in a fresh private window → login screen with "Random Predictions" appears → enter `Alice` → main screen loads → `alice` is visible in the top corner. (See quickstart.md Scenarios 1–3, 6, 7, 8.)
 
-- [ ] T004 [P] [US1] Create `useAuth` hook that reads/restores `session_v1` on mount, exposes `username`, `login(rawUsername)`, and `logout()` in `src/hooks/useAuth.ts` (depends on T003)
-- [ ] T005 [P] [US1] Create `LoginPage` component showing "Random Predictions" heading, username text input, submit button, and inline validation error in `src/components/LoginPage.tsx` (depends on T002)
-- [ ] T006 [US1] Update `src/App.tsx` to import and call `useAuth`; render `<LoginPage onLogin={login} />` when `username` is null, otherwise render `<MainPage username={username} onLogout={logout} />` (depends on T004, T005)
-- [ ] T007 [US1] Add `username` prop and `onLogout` prop signature to `MainPage`, and display the `username` value as a chip in the top-right corner of the header in `src/components/MainPage.tsx` (depends on T006)
+- [X] T004 [P] [US1] Create `useAuth` hook that reads/restores `session_v1` on mount, exposes `username`, `login(rawUsername)`, and `logout()` in `src/hooks/useAuth.ts` (depends on T003)
+- [X] T005 [P] [US1] Create `LoginPage` component showing "Random Predictions" heading, username text input, submit button, and inline validation error in `src/components/LoginPage.tsx` (depends on T002)
+- [X] T006 [US1] Update `src/App.tsx` to import and call `useAuth`; render `<LoginPage onLogin={login} />` when `username` is null, otherwise render `<MainPage username={username} onLogout={logout} />` (depends on T004, T005)
+- [X] T007 [US1] Add `username` prop and `onLogout` prop signature to `MainPage`, and display the `username` value as a chip in the top-right corner of the header in `src/components/MainPage.tsx` (depends on T006)
 
 **Checkpoint**: User Story 1 is fully functional — login, display, and app gate all work independently.
 
@@ -59,8 +59,8 @@
 
 **Independent Test**: Log in as `alice`, save a prediction, log out, log in as `bob` → bob sees no predictions → bob saves a different score → log out, log in as `alice` → alice's original prediction is unchanged. (See quickstart.md Scenario 4.)
 
-- [ ] T008 [P] [US2] Update `usePredictions` hook to accept a `username: string` parameter and use `predictions_v1_{username}` as the localStorage key for all reads and writes in `src/hooks/usePredictions.ts` (depends on T003)
-- [ ] T009 [US2] Update `MainPage` to call `usePredictions(username)` using the `username` prop (not a hardcoded key); remove any reference to the old global `predictions_v1` key in `src/components/MainPage.tsx` (depends on T007, T008)
+- [X] T008 [P] [US2] Update `usePredictions` hook to accept a `username: string` parameter and use `predictions_v1_{username}` as the localStorage key for all reads and writes in `src/hooks/usePredictions.ts` (depends on T003)
+- [X] T009 [US2] Update `MainPage` to call `usePredictions(username)` using the `username` prop (not a hardcoded key); remove any reference to the old global `predictions_v1` key in `src/components/MainPage.tsx` (depends on T007, T008)
 
 **Checkpoint**: User Story 2 is fully functional — saving a prediction as one user does not appear for another user.
 
@@ -72,8 +72,8 @@
 
 **Independent Test**: Log in → open prediction modal → click logout → confirm dialog appears → confirm → login screen shown. Log in again → click logout without modal open → instant logout, no dialog. (See quickstart.md Scenarios 5, 9.)
 
-- [ ] T010 [US3] Add a "Logout" button to the `MainPage` header that calls `onLogout` (or a local wrapper) in `src/components/MainPage.tsx`; the button MUST be visible at all times while logged in, including during the prediction list loading state (depends on T009)
-- [ ] T011 [US3] Implement logout guard in `MainPage`: use `isModalOpen` state as the proxy for "unsaved edits in progress" — if the modal is open (regardless of whether edits were actually made), call `window.confirm()` with an unsaved-edits warning before invoking `onLogout`; if the user cancels, keep the modal open and stay logged in; if the modal is closed, call `onLogout` immediately without a prompt in `src/components/MainPage.tsx` (depends on T010)
+- [X] T010 [US3] Add a "Logout" button to the `MainPage` header that calls `onLogout` (or a local wrapper) in `src/components/MainPage.tsx`; the button MUST be visible at all times while logged in, including during the prediction list loading state (depends on T009)
+- [X] T011 [US3] Implement logout guard in `MainPage`: use `isModalOpen` state as the proxy for "unsaved edits in progress" — if the modal is open (regardless of whether edits were actually made), call `window.confirm()` with an unsaved-edits warning before invoking `onLogout`; if the user cancels, keep the modal open and stay logged in; if the modal is closed, call `onLogout` immediately without a prompt in `src/components/MainPage.tsx` (depends on T010)
 
 **Checkpoint**: User Story 3 is fully functional — logout works at any time; the confirmation guard fires only when the modal is open.
 
@@ -83,8 +83,8 @@
 
 **Purpose**: Manual validation across all scenarios, edge case verification, and cleanup.
 
-- [ ] T012 [P] Run all 9 quickstart.md validation scenarios manually and confirm each expected outcome (see `specs/006-username-login/quickstart.md`)
-- [ ] T013 Verify that the orphaned `predictions_v1` global key (from feature 002) is silently ignored and does not interfere with the new per-user keys (check DevTools → Application → Local Storage)
+- [X] T012 [P] Run all 9 quickstart.md validation scenarios manually and confirm each expected outcome (see `specs/006-username-login/quickstart.md`)
+- [X] T013 Verify that the orphaned `predictions_v1` global key (from feature 002) is silently ignored and does not interfere with the new per-user keys (check DevTools → Application → Local Storage)
 
 ---
 

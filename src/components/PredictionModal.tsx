@@ -75,10 +75,6 @@ export const PredictionModal: React.FC<PredictionModalProps> = ({
     onClose();
   };
 
-  const getTeamFlag = (teamId: string): string => {
-    return teams.find(t => t.id === teamId)?.flag || '?';
-  };
-
   const getFlagUrl = (teamId: string): string => {
     return `https://flagcdn.com/w20/${teamId}.png`;
   };

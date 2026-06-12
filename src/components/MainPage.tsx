@@ -1,13 +1,18 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { useMatches } from '../hooks/useMatches';
 import { usePredictions } from '../hooks/usePredictions';
 import { getTodayMatches } from '../utils/date';
 import { MatchCard } from './MatchCard';
 import { PredictionModal } from './PredictionModal';
 
-export const MainPage: React.FC = () => {
+interface MainPageProps {
+  username: string;
+  onLogout: () => void;
+}
+
+export const MainPage: React.FC<MainPageProps> = ({ username, onLogout }) => {
   const { matches, teams, loading, refresh } = useMatches();
-  const { predictions } = usePredictions();
+  const { predictions } = usePredictions(username);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const todayMatches = getTodayMatches(matches);
@@ -24,6 +29,20 @@ export const MainPage: React.FC = () => {
     setIsModalOpen(false);
   };
 
+  const handleLogout = () => {
+    // If prediction modal is open, show confirmation
+    if (isModalOpen) {
+      const confirmed = window.confirm(
+        'You have unsaved edits in progress. Are you sure you want to log out?'
+      );
+      if (!confirmed) {
+        return;
+      }
+    }
+    // Call logout
+    onLogout();
+  };
+
   if (loading) {
     return (
       <div className="min-h-screen bg-gray-50 p-4 flex items-center justify-center">
@@ -37,7 +56,20 @@ export const MainPage: React.FC = () => {
       {/* Header */}
       <div className="bg-white border-b border-gray-200 sticky top-0 z-10">
         <div className="max-w-2xl mx-auto px-4 py-4">
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">World Cup Predictions</h1>
+          <div className="flex items-center justify-between mb-4">
+            <h1 className="text-3xl font-bold text-gray-900">World Cup Predictions</h1>
+            <div className="flex items-center gap-3">
+              <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
+                {username}
+              </span>
+              <button
+                onClick={handleLogout}
+                className="bg-red-500 hover:bg-red-600 text-white font-semibold py-1 px-4 rounded transition-colors text-sm"
+              >
+                Logout
+              </button>
+            </div>
+          </div>
           <div className="flex gap-2">
             <button
               onClick={handleOpenModal}
